@@ -1,0 +1,81 @@
+# Binaries
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Mac auto generated files
+.DS_Store
+
+# Visual Studio
+.vscode/
+.vs/
+.vscode/settings.json
+
+# Rider
+.idea/
+.idea/*
+*.iml
+.idea/workspace.xml
+.idea/usage.statistics.xml
+
+# Xamarin
+*.apk
+*.ap_
+*.dex
+*.keystore
+*.androidproj
+*.tmproj
+*.tmp
+.DS_Store
+.vscode/
+**/*.db
+**/*.bak
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml

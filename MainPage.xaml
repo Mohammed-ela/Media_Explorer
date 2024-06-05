@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MainPage"
+             SizeChanged="OnPageSizeChanged">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="Open Image" Clicked="OnOpenImageClicked"/>
+        <ScrollView x:Name="ImageScrollView" Orientation="Both" IsVisible="False">
+            <Image x:Name="DisplayedImage"/>
+        </ScrollView>
+        <ListView x:Name="MetadataListView">
+            <ListView.Header>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="File Name" WidthRequest="150"/>
+                    <Label Text="File Path" WidthRequest="200"/>
+                    <Label Text="File Size (KB)" WidthRequest="100"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding FileName}" WidthRequest="150"/>
+                            <Label Text="{Binding FilePath}" WidthRequest="200"/>
+                            <Label Text="{Binding FileSize}" WidthRequest="100"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
